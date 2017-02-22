@@ -1,0 +1,16 @@
+﻿Build started 22-2-2017 15:31:58.
+     1>Project "d:\documents\visual studio 2013\Projects\Knight Tour Backtracking\Knight Tour Backtracking\Knight Tour Backtracking.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I../../Common /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Debug\Knight Tour Backtracking.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I../../Common /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\Knight Tour Backtracking.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt "Knight Tour Backtracking.cpp"
+         Knight Tour Backtracking.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"d:\documents\visual studio 2013\Projects\Knight Tour Backtracking\Debug\Knight Tour Backtracking.exe" /INCREMENTAL /NOLOGO /LIBPATH:../../Common kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"d:\documents\visual studio 2013\Projects\Knight Tour Backtracking\Debug\Knight Tour Backtracking.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"d:\documents\visual studio 2013\Projects\Knight Tour Backtracking\Debug\Knight Tour Backtracking.lib" /MACHINE:X86 "Debug\Knight Tour Backtracking.obj"
+         Debug\stdafx.obj
+         Knight Tour Backtracking.vcxproj -> d:\documents\visual studio 2013\Projects\Knight Tour Backtracking\Debug\Knight Tour Backtracking.exe
+     1>Done Building Project "d:\documents\visual studio 2013\Projects\Knight Tour Backtracking\Knight Tour Backtracking\Knight Tour Backtracking.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.97
