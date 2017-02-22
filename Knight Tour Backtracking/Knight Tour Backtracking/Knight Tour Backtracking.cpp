@@ -39,7 +39,7 @@ void ShowSolution(int** solution)
 }
 
 //Checks if next position is within in the playboard and is not visited
-bool isInBoard(int nextPosX, int nextPosY, int** solution){
+bool IsInBoard(int nextPosX, int nextPosY, int** solution){
 
 	if ((nextPosX >= 0 && nextPosX < BOARDSIZE) && (nextPosY >= 0 && nextPosY < BOARDSIZE)){
 		if (solution[nextPosX][nextPosY] == -1){
@@ -51,7 +51,7 @@ bool isInBoard(int nextPosX, int nextPosY, int** solution){
 
 
 //Recursive function to move the knight across the board
-bool isSolutionFound(int count, int knightMoves[][2], int** solution, int currentPosX, int currentPosY)
+bool IsSolutionFound(int count, int knightMoves[][2], int** solution, int currentPosX, int currentPosY)
 {
 	// Check if knight tour is completed
 	if (count == BOARDSIZE * BOARDSIZE - 1){
@@ -63,11 +63,11 @@ bool isSolutionFound(int count, int knightMoves[][2], int** solution, int curren
 		int nextPosY = currentPosY + knightMoves[i][1];
 
 		//If horse can move, increase the count and place it inside the solution array
-		if (isInBoard(nextPosX, nextPosY, solution))
+		if (IsInBoard(nextPosX, nextPosY, solution))
 		{
 			solution[nextPosX][nextPosY] = count + 1;
 
-			if (isSolutionFound(count + 1, knightMoves, solution, nextPosX, nextPosY) == true){
+			if (IsSolutionFound(count + 1, knightMoves, solution, nextPosX, nextPosY) == true){
 				return true;
 			}
 
@@ -105,7 +105,7 @@ void StartKnightTour(int BOARDSIZE){
 	// Sets the count on the first/starting position to 0
 	solution[currentPosX][currentPosY] = 0;
 
-	if (isSolutionFound(count, knightMoves, solution, currentPosX, currentPosY)){
+	if (IsSolutionFound(count, knightMoves, solution, currentPosX, currentPosY)){
 		ShowSolution(solution);
 	}
 	else {
