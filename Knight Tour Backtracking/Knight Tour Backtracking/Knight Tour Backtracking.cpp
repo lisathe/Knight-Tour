@@ -18,8 +18,6 @@ int knightMoves[8][2] = {
 //Board size
 int BOARDSIZE;
 
-int validBoardSize = false;
-
 // Current position of the horse 
 int currentPosX = -1;
 int currentPosY = -1;
@@ -77,10 +75,8 @@ bool isSolutionFound(int count, int knightMoves[][2], int** solution, int curren
 				// If horse can't find move (current knight move used) , set count on current/chosen position to -1
 				// So this position return false, and goes back to the forloop ( increasing i by 1, keeping current pos ) 
 				solution[nextPosX][nextPosY] = -1;
-
 			}
 		}
-
 	}
 	return false;
 }
@@ -106,7 +102,6 @@ void StartKnightTour(int BOARDSIZE){
 		}
 	}
 
-
 	// Sets the count on the first/starting position to 0
 	solution[currentPosX][currentPosY] = 0;
 
@@ -116,14 +111,12 @@ void StartKnightTour(int BOARDSIZE){
 	else {
 		cout << "No knight tour found :( " << endl;
 	}
-
 }
 
 // Checks whether the input is an integer
 void OnlyAcceptNumberInputs(int& target)
 {
 	cin >> target;
-
 	if (cin.fail())
 	{
 		cout << "Input is not an integer." << endl;
@@ -135,25 +128,21 @@ void OnlyAcceptNumberInputs(int& target)
 int main()
 {
 	// Checks whether the board size is equal or higher than 5
-
 	while (BOARDSIZE < 5)
 	{
 		cout << "Please enter a board size with a value of 5 or higher: ";
-
 		OnlyAcceptNumberInputs(BOARDSIZE);
 	}
 
 	// Checks for the starting positiion if the entered value is zero and within the board
 	while (currentPosX < 0 || currentPosX >(BOARDSIZE - 1))
 	{
-
 		cout << "Please enter in which column the knight should start: ";
 		OnlyAcceptNumberInputs(currentPosX);
 	}
 
 	while (currentPosY < 0 || currentPosY>BOARDSIZE - 1)
 	{
-
 		cout << "Please enter in which row the knight should start: ";
 		OnlyAcceptNumberInputs(currentPosY);
 	}
